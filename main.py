@@ -92,12 +92,10 @@ canvas.grid(column=2, row=2)
 timer = Label(text="Timer", fg="blue", bg="white", font=(FONT_NAME, 60, "bold"))
 timer.grid(column=2, row=1)
 
-start = Button(text="Start", fg="white", bg="black", highlightthickness=0, command=start_timer,
-               font=(FONT_NAME, 20, "bold"))
+start = Button(text="Start", fg="white", bg="black", highlightthickness=0, command=start_timer, font=(FONT_NAME, 20, "bold"))
 start.grid(column=1, row=3)
 
-reset = Button(text="Reset", fg="white", bg="black", highlightthickness=0, command=rest_timer,
-               font=(FONT_NAME, 20, "bold"))
+reset = Button(text="Reset", fg="white", bg="black", highlightthickness=0, command=rest_timer, font=(FONT_NAME, 20, "bold"))
 reset.grid(column=3, row=3)
 
 check_marks = Label(bg="white")

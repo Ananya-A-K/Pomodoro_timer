@@ -35,7 +35,7 @@ def start_timer():
     work_sec = WORK_MIN * 60
     short_break_sec = SHORT_BREAK_MIN * 60
     long_break_sec = LONG_BREAK_MIN * 60
-    if reps == 4:
+    if reps % 4 == 0:
         count_down(long_break_sec)
         timer.config(text="Break4", fg="red")
     elif reps % 2 == 0:
